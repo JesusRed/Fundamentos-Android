@@ -47,7 +47,7 @@ public class TiendaFragment extends Fragment {
         LinearLayoutManager linearLayout = new LinearLayoutManager(getContext());
         linearLayout.setOrientation(LinearLayoutManager.VERTICAL);
         contenedorTienda.setLayoutManager(linearLayout);
-        tiendaAdapter = new TiendaAdapter(getActivity(),cargarDatosFireBase(),R.id.card);
+        tiendaAdapter = new TiendaAdapter(getActivity(), cargarDatosFireBase(), R.id.card);
         contenedorTienda.setAdapter(tiendaAdapter);
         registrarTienda = view.findViewById(R.id.registrarTienda);
         registrarTienda.setOnClickListener(new View.OnClickListener() {
@@ -65,15 +65,16 @@ public class TiendaFragment extends Fragment {
     }
 
     //objetos propios
-   public ArrayList<Tienda> cargarDatos(){
+    public ArrayList<Tienda> cargarDatos() {
         ArrayList<Tienda> tiendas = new ArrayList<>();
-        tiendas.add(new Tienda("1","https://www.eluniversal.com.co/binrepository/1050x700/0c0/0d0/none/13704/TNTI/image_content_3023679_20200427114131.jpg","Don Pedro","Viveres","8:00-9:00","Av 10",0,0,"5698794"));
-        tiendas.add(new Tienda("2","https://www.dominoprofesional.com/wp-content/uploads/2019/02/Los-nombres-de-tiendas-de-barrio-que-todos-en-Guatemala-han-visto-alguna-vez-885x500.jpg","Don Antonio","Viveres","8:00-9:00","Av 10",0,0,"5698794"));
-        tiendas.add(new Tienda("3","https://blog.oxfamintermon.org/wp-content/uploads/2014/11/tienda-solidaria-comercio-justo-oxfam-intermon.jpg","Don Juan","Viveres","8:00-9:00","Av 10",0,0,"5698794"));
+        tiendas.add(new Tienda("1", "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80", "Don Pedro", "Viveres", "8:00-9:00", "Av 10", 0, 0, "5698794"));
+        tiendas.add(new Tienda("2", "https://images.unsplash.com/photo-1526152505827-d2f3b5b4a52a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80", "Don Antonio", "Viveres", "8:00-9:00", "Av 10", 0, 0, "5698794"));
+        tiendas.add(new Tienda("3", "https://images.unsplash.com/photo-1554486855-60050042cd53?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80", "Don Juan", "Viveres", "8:00-9:00", "Av 10", 0, 0, "5698794"));
         return tiendas;
     }
-// cargar de Firebase consulta
-    public ArrayList<Tienda> cargarDatosFireBase(){
+
+    // cargar de Firebase consulta
+    public ArrayList<Tienda> cargarDatosFireBase() {
         final ArrayList<Tienda> tiendas = new ArrayList<>();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();

@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "624331022831",
-    "firebase_url": "https://movil2020ii.firebaseio.com",
-    "project_id": "movil2020ii",
-    "storage_bucket": "movil2020ii.appspot.com"
+    "project_number": "808378839491",
+    "firebase_url": "https://firstmobile-fb0.firebaseio.com",
+    "project_id": "firstmobile-fb0",
+    "storage_bucket": "firstmobile-fb0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:624331022831:android:fa6e28226fc7ae5131961a",
+        "mobilesdk_app_id": "1:808378839491:android:3b355618321427afc8cd76",
         "android_client_info": {
           "package_name": "co.edu.ufps.movil2020ii"
         }
       },
       "oauth_client": [
         {
-          "client_id": "624331022831-ce4vgcudfn3vmrcqr8qkv3jg2f0v8ffq.apps.googleusercontent.com",
+          "client_id": "808378839491-4kiu758tr44hgi12v0u8tcqtnahjbg18.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBQcgfu3prqfHQfYOvvXpiRoKvs-xgIst0"
+          "current_key": "AIzaSyDd6zpp1zU3Le2il1AJJo0l34FAN_RMfUc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "624331022831-ce4vgcudfn3vmrcqr8qkv3jg2f0v8ffq.apps.googleusercontent.com",
+              "client_id": "808378839491-4kiu758tr44hgi12v0u8tcqtnahjbg18.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
